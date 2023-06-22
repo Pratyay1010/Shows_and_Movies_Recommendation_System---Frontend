@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-[#11698E] custom-font text-[#F8F1F1]">
+    
+  <nav class="flex flex-col lg:flex-row lg:items-center justify-between bg-[#16C79A] text-xl">
+        
+    <div class="flex justify-between px-6 lg:px-10 py-8 lg:py-4">
+        <h2 class="font-[Poppin] text-[#F8F1F1]">Recommendation System</h3>
+        <i id="toggleMenu" class="fa-solid fa-bars lg:hidden block px-1 py-1"></i>
+    </div>
+
+    <div id="sideMenu" class="lg:hidden hidden border w-full h-[100vw] bg-[#30475E]
+    transition-all transform duration-300 ease-out">
+        <ul class="flex flex-col items-center py-16 space-y-8">
+            <a class="" href="/Pages/Netflix-Recommendation-Page.html">Netflex</a>
+            <a class="" href="/Pages/Amazon-Prime-Recommendation-Page.html">Amazon Prime</a>
+            <a class="" href="/Pages/Hulu-Recommendation-Page.html">Hulu</a>
+            <a class="" href="/Pages/Hotstar-Recommendation-Page.html">Disney+ Hotstart</a>
+        </ul>
+    </div>
+    
+
+    <div class="lg:block hidden">
+        <ul class="flex flex-row space-x-5 pr-10">
+            <a class="" href="/Pages/Netflix-Recommendation-Page.html">Netflex</a>
+            <a class="" href="/Pages/Amazon-Prime-Recommendation-Page.html">Amazon Prime</a>
+            <a class="" href="/Pages/Hulu-Recommendation-Page.html">Hulu</a>
+            <a class="" href="/Pages/Hotstar-Recommendation-Page.html">Disney+ Hotstart</a>
+        </ul>
+    </div>
+    
+  </nav>
+
+  <main id="main">
+    <div id="posterImg" class="bg-[#30475E] flex justify-center items-center"></div>
+
+    <div class="my-8 flex justify-center">
+      
+      <ul id="shows-list" class="grid grid-cols-2 md:grid-cols-5 gap-y-4 text-[#F8F1F1]">
+
+      </ul>
+    </div>
+    
+  </main>
+  
+  <script src="/Scripts/recommended-hotstar.js"></script>
+</body>
+</html>
